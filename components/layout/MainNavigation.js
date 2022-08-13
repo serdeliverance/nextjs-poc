@@ -1,8 +1,7 @@
 import Link from 'next/link'
-import classes from './MainNavigation.module.css';
+import classes from './MainNavigation.module.css'
 
-function MainNavigation() {
-
+function MainNavigation () {
   return (
     <header className={classes.header}>
       <div className={classes.logo}>React Meetups</div>
@@ -17,7 +16,7 @@ function MainNavigation() {
         </ul>
       </nav>
     </header>
-  );
+  )
 }
 
-export default MainNavigation;
+export default MainNavigation
