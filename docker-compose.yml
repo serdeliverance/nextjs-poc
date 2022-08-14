@@ -9,6 +9,8 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: root
+    volumes:
+      - ./mongo:/docker-entrypoint-initdb.d
 
   mongoku:
     image: huggingface/mongoku
