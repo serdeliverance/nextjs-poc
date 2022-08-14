@@ -21,6 +21,22 @@ function HomePage (props) {
   return <MeetupList meetups={props.meetups} />
 }
 
+/*
+  The page is generated in every request. One possible case
+  is for user validation
+*/
+// export async function getServerSideProps () {
+//   const req = context.req
+//   const res = context.res
+
+//   // fetch data from API
+//   return {
+//     props: {
+//       meetups: DUMMY_MEETUPS
+//     }
+//   }
+// }
+
 export async function getStaticProps () {
   // fetch data from API
   return {
