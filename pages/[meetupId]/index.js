@@ -30,7 +30,7 @@ export async function getStaticPaths () {
   client.close()
 
   return {
-    fallback: false, // set to true indicates that all paths are set here, so asking for a different one returns 404
+    fallback: 'blocking',
     paths: meetups.map(meetup => ({ params: { meetupId: meetup.id } }))
   }
 }
